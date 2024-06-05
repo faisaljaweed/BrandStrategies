@@ -1,0 +1,102 @@
+:root {
+  --heading--: #000000;
+  --sub-heading--: #ffffff;
+  --paragraph--: #000000;
+  --sub-paragraph--: #ff0404;
+  --para--: #ffffff;
+}
+
+/* Start Banner */
+#banner-img {
+  /* background-image: url('../Images/BannerImage/banner-img2.png'); */
+  background-image: url("../Images/BannerImage/banner-img.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+}
+
+.heading {
+  color: var(--heading--);
+}
+.parag {
+  color: var(--paragraph--);
+}
+/* End Banner */
+/* Home Section1 */
+.sectio1 {
+  color: var(--sub-paragraph--);
+}
+.table-back {
+  background-image: url("../Images/BannerImage/banner-img.png");
+  background-size: cover;
+}
+
+.row-hover:hover {
+  background-color: transparent !important;
+}
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 3px #dd7043; /* Outline color and width */
+}
+
+/* End Home Section1 */
+/* Start Home Section2 */
+.bgimg {
+  background-image: url("../Images//HomeScreen/bgimage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;/* Ensure it covers full viewport height */
+  display: flex; /* To center content vertically */
+  justify-content: center; /* To center content horizontally */
+  align-items: center;
+}
+
+.setion2-heading1{
+  color: transparent;
+  -webkit-text-stroke: 1px var(--heading--); 
+}
+/* End Home Section2 */
+
+/* Home Section 3 */
+
+#image-container {
+  height: 300px; /* Set the desired height of the container */
+  overflow: hidden; /* Hide any overflowing content */
+  position: relative; /* Enable relative positioning for the image */
+}
+
+#image-container img {
+  position: absolute; /* Make the image absolutely positioned */
+  top: 0%; /* Center the image vertically */
+  left: 50%; /* Center the image horizontally */
+  transform: translate(-50%, 0%); /* Translate the image by half its width and height to center it */
+  transition: all 3s ease-in-out; /* Smooth transition for the image movement */
+}
+
+#image-container:hover img {
+  transform: translate(-50%, -25%); /* Move the image upwards on hover */
+}
+
+/*End Home Section 3 */
+
+/* Home Section 5 */
+.HomeSectionSlider .slick-dots li button:before{
+  color:red;
+  font-size: 12px;
+  
+}
+/* End Home Section 5 */
+
+/* Start Home Section 6 */
+.bgimag{
+background-image: url('../Images/HomeScreen//Section4/web-sol-bg.png');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+width: 100%;
+background-color: #313131;
+}
+/* End Home Section 6 */
