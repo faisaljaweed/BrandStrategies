@@ -6,6 +6,9 @@ import HomeSection3 from "../Components/HomeSection3";
 import HomeSection4 from "../Components/HomeSection4";
 import HomeSection5 from "../Components/HomeSection5";
 import HomeSection6 from "../Components/HomeSection6";
+import HomeSection7 from "../Components/HomeSection7";
+import HomeSection8 from "../Components/HomeSection8";
+import Footer from "../Components/Footer";
 
 export default function Home() {
   return (
@@ -24,6 +27,13 @@ export default function Home() {
 
       <section className="bgimag">
         <HomeSection6/>
+      </section>
+      <HomeSection7/>
+      <section className="home-section8">
+        <HomeSection8/>
+      </section>
+      <section >
+        <Footer/>
       </section>
     </div>
   )
