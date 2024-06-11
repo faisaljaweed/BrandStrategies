@@ -16,9 +16,9 @@ export default function Footer() {
         <div>
             <img src={footerimg}/>
         </div>
-        <div>
+        <div className="md:grid md:grid-cols-2  lg:grid lg:grid-cols-3">
             <ul>
-                <h2 className="font-extrabold text-3xl">Services</h2>
+                <h2 className="font-extrabold text-3xl md:text-2xl">Services</h2>
                 <li className="pb-2"><Link to="" className="heading font-semibold"><ArrowRightAltIcon style={{fontSize:25}}/> Logo Design</Link></li>
                 <li className="pb-2"><Link to="" className="heading font-semibold"><ArrowRightAltIcon style={{fontSize:25}}/> Website Design & Deveploment </Link></li>
                 <li className="pb-2"><Link to="" className="heading font-semibold"><ArrowRightAltIcon style={{fontSize:25}}/> Ecommerce Solution</Link></li>
@@ -26,7 +26,7 @@ export default function Footer() {
                 <li className="pb-2"><Link to="" className="heading font-semibold"><ArrowRightAltIcon style={{fontSize:25}}/> Digital Marketing</Link></li>
             </ul>
             <ul>
-               <h2 className="font-extrabold text-3xl">Useful Links</h2> 
+               <h2 className="font-extrabold text-3xl md:text-2xl">Useful Links</h2> 
                 <li className="pb-2"><Link to="" className="heading font-semibold"><ArrowRightAltIcon style={{fontSize:25}}/> Pricing </Link></li>
                 <li className="pb-2"><Link to="" className="heading font-semibold"><ArrowRightAltIcon style={{fontSize:25}}/> Protfolio</Link></li>
                 <li className="pb-2"><Link to="" className="heading font-semibold"><ArrowRightAltIcon style={{fontSize:25}}/> Cotact Us</Link></li>
@@ -34,23 +34,25 @@ export default function Footer() {
                 <li className="pb-2"><Link to="" className="heading font-semibold"><ArrowRightAltIcon style={{fontSize:25}}/> Privacy Policy</Link></li>
             </ul>
             <ul>
-                <h2 className="font-extrabold text-3xl">Contact</h2>
+                <h2 className="font-extrabold text-3xl md:textx-2xl">Contact</h2>
                 <li className="flex gap-3 pb-2"><PhoneInTalkIcon/>844-243-4219</li>
                 <li className="flex gap-3 pb-2"><EmailIcon/>sales@blitzwebsolution.com</li>
                 <li className="flex gap-3 pb-2"><FacebookIcon/><LinkedInIcon/><StarIcon/><StarsIcon/></li>
             </ul>
-            <div className="flex justify-center items-center pt-12 pb-12">
-                <div className="w-24 h-1 bg-black"></div>
-                <div className="w-14 h-14 ml-4 mr-4 bg-white shadow-xl shadow-black rounded-full flex items-center justify-center"><AddIcon/></div>
-                <div className="w-24 h-1 bg-black"></div>
-            </div>
         </div>
+            <div className="flex justify-center items-center pt-12 pb-12">
+                <div className="w-24 h-1 bg-black lg:w-[40%]"></div>
+                <div className="w-14 h-14 ml-4 mr-4 bg-white shadow-xl shadow-black rounded-full flex items-center justify-center"><AddIcon/></div>
+                <div className="w-24 h-1 bg-black lg:w-[40%]"></div>
+            </div>
         
     </div>
     <div className="bg-[#313131]">
+        <div className="md:flex md:justify-around md:p-2">
             <p className="slider-para text-center pt-3">© Copyright 2023 Blitz Web Solution, All Rights Reserved</p>
           <div className="flex justify-center items-center">
             <img src={paymentimg} className="pt-4 pb-4 w-64 " />
+            </div>
             </div>
         </div>
     </div>

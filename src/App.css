@@ -16,7 +16,7 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 800px;
+  height: 100%;
 }
 
 .heading {
@@ -65,7 +65,7 @@
 /* Home Section 3 */
 
 #image-container {
-  height: 300px; /* Set the desired height of the container */
+  /* height: 300px;  */
   overflow: hidden; /* Hide any overflowing content */
   position: relative; /* Enable relative positioning for the image */
 }
@@ -124,6 +124,29 @@ width: 100%;
 .slider-para{
   color: var(--para--);
 }
+
+/* In your styles.css file */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .slider-img {
+    background-image: url('../Images/HomeScreen/Section4/testi-mobile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 100vh;
+  }
+}
+@media (min-width: 1024px) {
+  .slider-img {
+    background-image: url('../Images/HomeScreen/Section4/testi-mobile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80%; /* Adjust the width as needed */
+    height: 100vh;
+  }
+}
+
 
 /* End Home Section 8 */
 

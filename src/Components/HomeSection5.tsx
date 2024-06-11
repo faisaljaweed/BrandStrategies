@@ -76,7 +76,7 @@ export default function HomeSection5() {
             <div key={index}>
               <div className="flex justify-center items-center flex-col pt-6">
                 <h2 className="heading text-center text-[22px] font-bold pb-3 ">{item.heading}</h2>
-                <p className="parag text-center text-[15px] ">{item.para}</p>
+                <p className="parag text-center text-[15px] md:p-3">{item.para}</p>
               </div>
             </div>
           );

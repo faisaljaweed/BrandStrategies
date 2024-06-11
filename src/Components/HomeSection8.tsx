@@ -32,7 +32,7 @@ export default function HomeSection8() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
@@ -40,7 +40,7 @@ export default function HomeSection8() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -99,13 +99,14 @@ export default function HomeSection8() {
       </div>
       <p></p>
       <h2></h2>
-      <Slider {...settings} className="slider-img mt-6">
+      <div >
+      <Slider {...settings} >
         {data.map((x, i) => (
-          <div key={i}>
+          <div key={i} className="slider-img mt-6 ">
             <div className="mt-[20px] flex justify-center items-center ">
               <img src={x.url} className="w-28" style={{ filter: 'brightness(0) invert(1)' }} alt="Quote" />
             </div>
-            <p className="slider-para text-center pl-16 pr-16 pt-2 leading-7 font-semibold">{x.image}</p>
+            <p className="slider-para text-center pl-16 pr-16 pt-2 md:leading-4 leading-6 font-semibold">{x.image}</p>
             <h2 className="text-[#dd7043] text-center font-bold text-[24px] pt-6">{x.heading}</h2>
             <div className="flex justify-center items-center pt-4">
               <StarRateIcon style={{ color: "#ffba00" }} />
@@ -117,6 +118,7 @@ export default function HomeSection8() {
           </div>
         ))}
       </Slider>
+      </div>
     </div>
   );
 }

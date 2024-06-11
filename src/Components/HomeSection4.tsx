@@ -27,11 +27,11 @@ export default function HomeSection4() {
       <h2 className="heading text-center font-bold text-[32px]">
         Some of Our Best Work
       </h2>
-      <div className="flex justify-center items-center flex-col">
+      <div className="flex justify-center items-center flex-col lg:grid lg:grid-cols-3 lg:flex lg:justify-between">
         {data.map((x, i) => {
           return (
             <div key={i}  id="image-container"
-            className="mt-10 mb-4 ml-2 pb-7 pl-2 pr-2 w-72 sm:w-1/4 md:w-[12rem] md:h-[14rem] cursor-pointer hover:opacity-75 rounded-md">
+            className=" mt-10 mb-4 ml-2 pb-7 pl-2 pr-2 w-72 sm:w-1/4 h-[300px] md:w-full md:h-[400px] cursor-pointer hover:opacity-75 rounded-md  lg:w-[70%]">
               <img src={x.url} alt="img" />
             </div>
           );
